@@ -97,7 +97,7 @@ private fun GardenList(
     val gridState = rememberLazyGridState()
     ReportDrawnWhen { gridState.layoutInfo.totalItemsCount > 0 }
     LazyVerticalGrid(
-        columns = GridCells.Fixed(2),
+        columns = GridCells.Fixed(3),
         modifier,
         state = gridState,
         contentPadding = PaddingValues(
@@ -135,7 +135,7 @@ private fun GardenListItem(
             end = cardSideMargin,
             bottom = dimensionResource(id = R.dimen.card_bottom_margin)
         ),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer)
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
     ) {
         Column(Modifier.fillMaxWidth()) {
             SunflowerImage(

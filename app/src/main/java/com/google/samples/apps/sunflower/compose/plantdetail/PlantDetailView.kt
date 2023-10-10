@@ -408,7 +408,7 @@ private fun PlantDetailsToolbar(
         TopAppBar(
             modifier = modifier
                 .statusBarsPadding()
-                .background(color = MaterialTheme.colorScheme.surface),
+                .background(color = MaterialTheme.colorScheme.surfaceVariant),
             title = {
                 Row {
                     IconButton(
@@ -468,7 +468,7 @@ private fun PlantHeaderActions(
                 maxHeight = Dimens.ToolbarIconSize
             )
             .background(
-                color = MaterialTheme.colorScheme.surface,
+                color = MaterialTheme.colorScheme.surfaceVariant,
                 shape = CircleShape
             )
 
